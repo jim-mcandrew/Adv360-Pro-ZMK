@@ -14,25 +14,25 @@ macro_paste: macro_paste{
 compatible = "zmk,behavior-macro";
 label = "macro_paste";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LEFT_COMMAND>, <&kp V>, <&macro_release &kp LEFT_COMMAND>;
+bindings = <&kp LEFT_COMMAND+V>;
 };
 macro_copy: macro_copy{
 compatible = "zmk,behavior-macro";
 label = "macro_copy";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LEFT_COMMAND>, <&kp C>, <&macro_release &kp LEFT_COMMAND>;
+bindings = <&kp LEFT_COMMAND+C>;
 };
 macro_undo: macro_undo{
 compatible = "zmk,behavior-macro";
 label = "macro_undo";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LEFT_COMMAND>, <&kp Z>, <&macro_release &kp LEFT_COMMAND>;
+bindings = <&kp LEFT_COMMAND+Z>;
 };
 macro_redo: macro_redo{
 compatible = "zmk,behavior-macro";
 label = "macro_redo";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LEFT_COMMAND>, <&macro_press &kp LSHIFT>, <&kp Z>, <&macro_release &kp LSHIFT>, <&macro_release &kp LEFT_COMMAND>;
+bindings = <&kp LEFT_COMMAND+LSHIFT+Z>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
